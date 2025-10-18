@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemonZ Development - Forging Digital Empires</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">DemonZ <span>Development</span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="plugins.html" class="nav-link">Plugin Hanger</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="glitch" data-text="FORGING DIGITAL EMPIRES">
+                    FORGING DIGITAL EMPIRES
+                </h1>
+                <p class="hero-subtitle" id="typing-effect"></p>
+                <a href="#services" class="cta-button">Our Arsenal</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container reveal-fade">
+                <h2>Who We Are</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Elite. Innovative. Confident.</h3>
+                        <p>We are <strong>DemonZ Development</strong>, an elite team of developers and digital architects. We don't just write code; we forge digital empires. Our mission is to provide high-performance, custom-coded solutions that are powerful, stunning, and built to last.</p>
+                        <p>We specialize in turning complex problems into cutting-edge, professional-grade digital products. From intricate Minecraft networks to powerful web platforms, our work is defined by precision and innovation.</p>
+                    </div>
+                    <div class="about-image">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="content-section">
+            <div class="container reveal-fade">
+                <h2>Our Services</h2>
+                <div class="service-cards-grid">
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Custom Minecraft Plugins</h3>
+                        <p>High-performance plugins for Spigot, Paper, Velocity, and BungeeCord. From custom gameplay mechanics to full network synchronization.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Powerful, stunning, and responsive websites. We build custom platforms, backends, and frontend experiences that captivate your users.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fab fa-discord"></i></div>
+                        <h3>Intelligent Discord Bots</h3>
+                        <p>Custom-built bots with advanced features, database integration, moderation tools, and anything else you can imagine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popular-plugins" class="content-section">
+            <div class="container reveal-fade">
+                <h2>Popular Plugins</h2>
+                <div class="plugin-cards-grid" id="plugin-grid">
+                    </div>
+                <div class="section-cta">
+                    <a href="plugins.html" class="cta-button">View All Plugins</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="content-section">
+            <div class="container reveal-fade">
+                <h2>Our Ecosystem</h2>
+                <div class="ecosystem-grid">
+                    <div class="ecosystem-card">
+                        <div class="eco-card-content">
+                            <i class="fas fa-server"></i>
+                            <h3>HyzerOX Hosting</h3>
+                            <p>A subsidiary of DemonZ Development, providing high-performance, reliable server hosting for your games and websites.</p>
+                            <a href="#" class="eco-button">Visit HyzerOX</a>
+                        </div>
+                    </div>
+                    <div class="ecosystem-card">
+                        <div class="eco-card-content">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>DemonZGames Network</h3>
+                            <p>Our official Minecraft server. Experience our custom-coded plugins and gameplay innovations firsthand.</p>
+                            <a href="#" class="eco-button">Join the Server</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container reveal-fade">
+                <h2>Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind? Let's build your empire together.</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>DemonZ <span>Development</span></h3>
+                    <p>Forging Digital Empires. <br>&copy; 2025 DemonZ Development. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plugins.html">Plugins</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
