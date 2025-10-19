@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Hanger - DemonZ Development</title>
+    
+    <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="css/plugins.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" href="/favicon.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">DemonZ <span>Development</span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="plugins.html" class="nav-link active">Plugin Hanger</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="plugin-hanger-hero">
+            <div class="container">
+                <i class="fas fa-cubes"></i>
+                <h1>Plugin Hanger</h1>
+                <p>Browse our full arsenal of custom-coded solutions.</p>
+            </div>
+        </section>
+
+        <section id="featured-plugin" class="featured-plugin-section">
+            <div class="container">
+                <h2>Featured Plugin</h2>
+                <div class="featured-plugin-card" id="featured-plugin-card">
+                    <div class="featured-loading" id="featured-loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading Featured Plugin...</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="filter-bar">
+            <div class="container filter-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search plugins by name or keyword...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="filter-category"><i class="fas fa-tags"></i> Category:</label>
+                        <select id="filter-category" name="category">
+                            <option value="all">All</option>
+                            <option value="gameplay">Gameplay</option>
+                            <option value="utility">Utility</option>
+                            <option value="economy">Economy</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-by"><i class="fas fa-sort-amount-down"></i> Sort By:</label>
+                        <select id="sort-by" name="sort">
+                            <option value="downloads">Most Downloads</option>
+                            <option value="updated">Last Updated</option>
+                            <option value="name">Name (A-Z)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plugin-list" class="content-section">
+            <div class="container">
+                <h2>All Plugins</h2>
+                <div class="plugin-list-grid" id="plugin-list-grid">
+                    <div class="loading-spinner" id="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>DemonZ <span>Development</span></h3>
+                    <p>Forging Digital Empires. <br>&copy; 2025 DemonZ Development. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plugins.html">Plugins</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script> <script src="js/plugins.js"></script> </body>
+</html>
