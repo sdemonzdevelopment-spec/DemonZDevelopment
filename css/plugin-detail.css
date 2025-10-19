@@ -1,0 +1,170 @@
+/* --- Plugin Detail Section --- */
+.plugin-detail-section {
+    padding: 80px 0;
+    margin-top: 70px; /* Navbar height */
+    background-color: var(--dark-primary);
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt.png');
+    min-height: 80vh;
+}
+
+#plugin-detail-container {
+    max-width: 1000px;
+}
+
+/* --- Loading & Error States --- */
+#plugin-detail-content {
+    position: relative;
+    min-height: 400px;
+}
+.plugin-detail-error {
+    color: #ff4d4d;
+    text-align: center;
+    padding: 50px 0;
+    font-family: var(--font-heading);
+}
+
+/* --- Plugin Header --- */
+.plugin-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    align-items: center;
+    background: var(--dark-secondary);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-tertiary);
+    margin-bottom: 40px;
+}
+
+.plugin-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid var(--dark-tertiary);
+}
+
+.plugin-title-info h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--electric-blue);
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    margin: 0 0 5px;
+}
+
+.plugin-title-info p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.plugin-meta {
+    display: flex;
+    gap: 20px;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.plugin-meta span i {
+    color: var(--electric-blue);
+    margin-right: 5px;
+}
+
+.plugin-actions .cta-button {
+    font-size: 1.2rem;
+    padding: 15px 35px;
+}
+
+/* --- Plugin Body --- */
+.plugin-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+.plugin-description {
+    background: var(--dark-secondary);
+    border: 1px solid var(--dark-tertiary);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.plugin-description h2 {
+    /* Uses global h2 style */
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* This is the container for the plugin text content */
+#plugin-description-content {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    
+    /* white-space: pre-wrap; is set by JS */
+}
+
+.plugin-sidebar h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--electric-blue);
+    margin-bottom: 20px;
+}
+
+.plugin-sidebar ul {
+    list-style: none;
+    background: var(--dark-secondary);
+    border: 1px solid var(--dark-tertiary);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.plugin-sidebar li {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.plugin-sidebar li strong {
+    color: var(--text-primary);
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.plugin-sidebar li a {
+    color: var(--electric-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.plugin-sidebar li a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .plugin-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+    .plugin-actions {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .plugin-body {
+        grid-template-columns: 1fr;
+    }
+    .plugin-sidebar {
+        /* Sidebar will stack below description */
+        margin-top: 0;
+    }
+}
